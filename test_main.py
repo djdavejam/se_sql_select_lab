@@ -25,13 +25,13 @@ def test_step5():
 def test_step6():
     assert('name_length' in df_name_length.columns)
     assert(df_name_length.iloc[0]['name_length'] == 6)
-        
+
 def test_step7():
     assert('short_title' in df_short_title.columns)
     assert(df_short_title.iloc[0]['short_title'] == 'Pr')
 
 def test_step8():
-    assert(sum_total_price[0] == 9604251)
+    assert(sum_total_price == 9604251)
 
 def test_step9():
     for x in ['day', 'month', 'year']:
